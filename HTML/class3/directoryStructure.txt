@@ -1,0 +1,14 @@
+index -> home file
+
+
+sibling ->  file/folder  on same path -> direct name / "./"
+
+ 
+parent -> file/folder outside of the path->"../" through this we can access parent directory and all the siblings in parent directory
+
+
+grandparent -> file/folder one step outside of parent -> "../../" thorough grantparent directory
+
+children -> file/ folder inside of a sibling folder -> we use "/" to access children of any directory/folder
+
+grandchild -> file/folder inside of sibling of parent folder -> we use "/" to acces child then again after name we use "/" to reach grand child directory

@@ -1,0 +1,36 @@
+/* h1 {
+    color: blue;
+}
+
+* {
+    background-color: aqua;
+    color: red;
+}
+
+p {
+    background-color: green;
+}
+
+div {
+    background-color: blueviolet;
+} */
+
+/* .car {
+   background-color: cornflowerblue; 
+   color: white;
+}
+
+#color_red {
+    color: red !important;
+} */
+
+/* h1, h2 {
+    color: darkgrey;
+} */
+
+h1 h2 {
+    color: red;
+}
+p>a {
+    color: green;
+}
