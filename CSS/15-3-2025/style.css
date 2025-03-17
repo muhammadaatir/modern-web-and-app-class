@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Poppins;
+    src: url('./fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: Poppins;
+    src: url('./fonts/Poppins-Regular.ttf');
+}
+
+h1 {
+    /* background-color: red;
+    color: #fff; */
+    /* background-color: rgb(255,255,255);
+    color: hsla(85, 100%, 65%, 0.6); */
+    /* color: #ff0000; */
+    font-family: Poppins;
+    /* font-size: ; */
+}
+/* 
+p {
+    font-size: 32px;
+} */
+
+p {
+    /* font-size: 50%; */
+    font-size: 2em;
+    font-weight: normal;
+    font-style: italic;
+}
+

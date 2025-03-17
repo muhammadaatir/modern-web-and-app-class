@@ -1,0 +1,81 @@
+/* h1 {
+    color: green;
+} */
+/* * {
+    background-color: aqua;
+} */
+
+/* p {
+    color: red;
+} */
+
+/* .para {
+  color: yellow;
+}
+
+.color_blue {
+  color: blue;
+}
+
+.bg_purple {
+  background-color: purple;
+}
+
+#test_id {
+  color: orange;
+} */
+
+/* .list > .list_child {
+  color: green;
+}
+
+.main > a {
+    color: blueviolet;
+}
+
+.main > h3 {
+    color: cyan;
+}
+
+div .heading {
+    color: brown;
+}
+
+h1, h1+h2 {
+    color: yellowgreen;
+} */
+
+/* .list~h1 {
+    color: blue;
+} */
+
+/* h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+} */
+
+/* .container {
+    color: blueviolet;
+}
+
+#heading {
+    color: red;
+} */
+
+/* p {
+    background-color: red;
+    color: blue;
+    color: #e18756;
+}
+
+h1 {
+    color: rgb(50, 210, 200);
+} */
+h1 {
+    /* color: red;
+    opacity: 1; */
+    color: rgba(255, 0, 0, 0.396)
+}
