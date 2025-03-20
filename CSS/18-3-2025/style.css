@@ -1,0 +1,89 @@
+/* @font-face {
+    font-family: Tektur;
+    src: url('fonts/Tektur-Regular.ttf');
+}
+
+@font-face {
+    font-family: MyFontBold;
+    src: url("fonts/Tektur_SemiCondensed-Bold.ttf");
+} */
+
+/* p {
+    font-family: "Tektur", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.text {
+    text-transform: capitalize;
+    text-decoration: overline;
+} */
+
+/* p {
+    line-height: 20px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+} */
+
+/* img {
+    text-align: justify;
+
+    vertical-align: top;
+} */
+
+/* h1 {
+    text-shadow:  4px -4px 0.3px red;
+} */
+
+/* h1:first-letter {
+    font-size: 50px;
+    color: red;
+} */
+
+/* p:first-line {
+  font-weight: 800;
+  background-color: aqua;
+}
+
+a {
+    background-color: aqua;
+}
+
+a:visited {
+  text-decoration: none;
+  color: red;
+  background-color: green;
+} */
+
+/* .text {
+    background-color: blue;
+} */
+
+/* h1:hover {
+    color: aqua;
+    font-size: 20px;
+    text-transform: lowercase;
+} */
+
+/* .btn:hover {
+    background-color: blue;
+} */
+/* .btn:active, .btn:hover  {
+    background-color: purple;
+}
+
+input:focus {
+    background-color: chocolate;
+}
+
+p[class~="test"] {
+    color: red;
+}
+
+p#test1 {
+    color: blue;
+} */
+
+p[class*="do"] {
+    color: red;
+}
