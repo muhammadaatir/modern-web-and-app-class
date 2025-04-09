@@ -1,0 +1,96 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    background-color: #000000;
+    width: 100%;
+}
+/* header css starts */
+
+.logo_container img {
+    width: 165px;
+    height: 75px;
+}
+
+.logo_container {
+    width: 40%;
+    height: 100%;
+    padding-left: 72px;
+    vertical-align: baseline;
+}
+
+.menus_list li {
+    display: inline-block;
+    color: white;
+    margin: 0px 20px;
+}
+
+header div {
+    display: inline-block;
+}
+
+header {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 0px;
+    height: 93px;
+    vertical-align: middle;
+}
+
+.btns_container button {
+    height: 45px;
+    border-radius: 35px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px 16.5px 12px 16.5px;
+}
+
+.franchise_btn {
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+.order_btn {
+    border: 1px solid #ed1c24;
+    background-color: #ed1c24;
+    margin-left: 10px;
+}
+
+.btns_container {
+    margin-left: 10px;
+}
+
+.header_container {
+    height: 100%;
+    vertical-align: middle;
+}
+
+/* header css ends */
+
+/* section  */
+
+.relative_container {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: red;
+}
+
+
+.text_container {
+    width: 50%;
+    background-color: aqua;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+}
+.container {
+    background-color: #000000;
+    padding: 10px;
+    width: 30%;
+}

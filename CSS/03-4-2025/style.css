@@ -1,0 +1,109 @@
+/* .main {
+    background-color: aqua;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 30%;
+    margin: 0 auto 10px auto;
+    display: inline-block;
+}
+.container {
+    margin: 0 auto;
+    width: 50%;
+}
+body {
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+.test {
+    display: block;
+}
+
+.list_element {
+    display: none;
+    visibility: hidden;
+}
+
+ul {
+    background-color: blueviolet;
+} */
+
+/* .input {
+    border: none;
+    box-shadow: 10px 20px 2px 10px red;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.input:focus {
+    outline: none;
+} */
+
+/* div {
+    background-color: white;
+    padding: 10px;
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px; 
+}
+
+body {
+    background-color: red;
+} */
+
+/* img {
+    width: 200px;
+    height: 100px;
+}
+
+.parent {
+    padding: 10px;
+    width: 250px;
+    margin: auto;
+    background-color: aqua;
+    border-top-left-radius: 80px 50px;
+}
+
+.image_container {
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: blue;
+}
+
+.text {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: red;
+} */
+
+
+/* ol {
+    list-style: outside circle;
+} */
+
+table {
+    /* width: 250px; */
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 8px;
+    /* border-spacing: 10px; */
+    border-collapse: collapse;
+}
+table td {
+    empty-cells: hide;
+    border: 2px solid red;
+    margin: 10px;
+    padding: 10px;
+}
+
+table td:hover {
+    color: blue;
+}
+
+button {
+    cursor: crosshair;
+}
