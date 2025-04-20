@@ -1,0 +1,59 @@
+i, .google_icon {
+    color: #898989;
+    font-size: 25px;
+}
+
+.google_icon {
+    font-size: 30px !important;
+}
+
+.menu_parent {
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    border-bottom: 4px solid;
+    padding-top: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.menu_parent:hover {
+    background-color: #ffc107;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar_parent {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 991px) {
+    .parent_container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .navbar {
+        background: radial-gradient(ellipse at center, #3d3d3d 0%, #1e1e1e 57%) !important;
+    }
+    .responsive_button { 
+        border-right: 3px solid #000;
+        background-color: #313131;
+        border-radius: 0;
+    }
+    .responsive_button i {
+        font-size: 30px;
+    }
+    .nav_conatiner {
+        padding-left: 0;
+    }
+    .parent_container {
+        display: flex;
+        justify-content: space-between;
+    }
+}

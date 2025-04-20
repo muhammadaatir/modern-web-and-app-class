@@ -1,0 +1,38 @@
+img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    padding-top: 15px;
+}
+.text {
+    display: inline-block;
+}
+
+.container:active {
+    /* display: flex; */
+    padding: 20px;
+    /* background-image: url("./cover.jpg"); */
+    background-image: linear-gradient(#336666,
+ #66cccc); 
+    /* background-attachment: fixed;
+    background-repeat: no-repeat; */
+    /* overflow: auto;
+    max-height: 300px; */
+    background-position: left bottom;
+}
+
+body {
+    /* background-image: url("./cover.jpg");
+    background-attachment: fixed; */
+}
+
+.plus_icon {
+    color: grey;
+    background-color: aquamarine;
+}
+
+.plus_icon:hover {
+    color: red;
+    cursor: pointer;
+    background-color: cornflowerblue;
+}

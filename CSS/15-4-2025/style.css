@@ -1,0 +1,21 @@
+    /* button:focus {
+    outline: none !important;
+    border: none;
+    box-shadow: none !important;
+    }
+
+    .text-primary {
+    color: green !important;
+    } */
+
+    .row {
+        background-color: aqua;
+    }
+
+    .row div {
+        /* width: 200px;
+        height: 200px; */
+        border: 2px solid white;
+        background-color: red;
+        /* margin: 20px; */
+    }

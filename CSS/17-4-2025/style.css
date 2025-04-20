@@ -1,0 +1,26 @@
+.row {
+    background-color: aqua;
+    /* gap: 20px; */
+}
+
+.row div {
+    background-color: blue;
+    padding: 20px;
+    margin: 22px;
+    color: white;
+}
+
+.heading {
+    font-size: 20px;
+    color: aqua;
+    font-weight: bold;
+}
+
+.card_custom_text {
+    font-size: 14px !important;
+}
+
+.title_container {
+    display: flex;
+    justify-content: space-between;
+}
