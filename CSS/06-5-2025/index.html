@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+        span:hover {
+            box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            border: none !important;
+        }
+
+        img {
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#popular_tab"
+                    type="button" role="tab" aria-controls="popular_tab" aria-selected="true">Popular</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#area_tab"
+                    type="button" role="tab" aria-controls="area_tab" aria-selected="false">Area Unit</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#categories_tab" type="button" role="tab" aria-controls="categories_tab"
+                    aria-selected="false">Categories</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#test_tab"
+                    type="button" role="tab" aria-controls="test_tab" aria-selected="false">Test</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade" id="popular_tab" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <h1>Popular</h1>
+            </div>
+            <div class="tab-pane fade" id="area_tab" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <h1>Test</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, suscipit voluptatem. Blanditiis
+                    dolorum nulla nam. Natus quisquam, eius rem voluptatum ab quas, molestias nobis reiciendis delectus
+                    labore quaerat error eveniet?</p>
+                <img src="./cover.jpg" alt="">
+            </div>
+            <div class="tab-pane fade  show active" id="categories_tab" role="tabpanel"
+                aria-labelledby="pills-contact-tab" tabindex="0">
+                <div class="row gap-4">
+                    <span class="p-4 border col-12 col-sm-6 col-xl-4 col-xxl-2">
+                        <p>5 Lacs</p>
+                    </span>
+                    <span class="p-4 border col-12 col-sm-6 col-xl-4 col-xxl-2">
+                        <p>10 Lacs</p>
+                    </span>
+                    <span class="p-4 border col-12 col-sm-6 col-xl-4 col-xxl-2">
+                        <p>15 Lacs</p>
+                    </span>
+                    <span class="p-4 border col-12 col-sm-6 col-xl-4 col-xxl-2">
+                        <p>20 Lacs</p>
+                    </span>
+                    <span class="p-4 border col-12 col-sm-6 col-xl-4 col-xxl-2">
+                        <p>25 Lacs</p>
+                    </span>
+                    <span class="p-4 border col-12 col-sm-6 col-xl-4 col-xxl-2">
+                        <p>30 Lacs</p>
+                    </span>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="test_tab" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <h1>Test</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, suscipit voluptatem. Blanditiis
+                    dolorum nulla nam. Natus quisquam, eius rem voluptatum ab quas, molestias nobis reiciendis delectus
+                    labore quaerat error eveniet?</p>
+                <img src="./cover.jpg" alt="">
+            </div>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Danger
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div>
+                            <label for="inputPassword5" class="form-label">Password</label>
+                            <input type="password" id="inputPassword5" class="form-control"
+                                aria-describedby="passwordHelpBlock">
+                            <div id="passwordHelpBlock" class="form-text">
+                                Your password must be 8-20 characters long, contain letters and numbers, and must not
+                                contain spaces, special characters, or emoji.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+      crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
