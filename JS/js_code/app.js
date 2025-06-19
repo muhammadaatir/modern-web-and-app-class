@@ -428,19 +428,19 @@
 // var isTenFound = false;
 // var arr = [1, 3, 5, 7, 10, 8, 90]
 // for (var i = 0; i < arr.length; i++) {
-    // if (arr[i] % 2 !== 0) {
-    //     console.log(arr[i] + " is an odd number");
-    //     odd++
-    // } else {
-    //     even++
-    //     console.log(arr[i] + " is not a odd number")
-    // }
+// if (arr[i] % 2 !== 0) {
+//     console.log(arr[i] + " is an odd number");
+//     odd++
+// } else {
+//     even++
+//     console.log(arr[i] + " is not a odd number")
+// }
 // if(arr[i] > even ) {
 //     even = arr[i]
 // }
-    // if (arr[i] === 10) {
-        // isTenFound = true;
-    // }
+// if (arr[i] === 10) {
+// isTenFound = true;
+// }
 // }
 // console.log(even);
 
@@ -552,3 +552,456 @@
 //     //sum - num1 = num2
 // num1 = num1-num2;
 // console.log(num1, num2);
+
+// var number = 1234.44;
+// var number2 = 23;
+
+// console.log(number + number2);
+// console.log(number - number2);
+// console.log(number * number2);
+// console.log(number / number2);
+// console.log(14 % 2);
+
+// number2 = number2 - 1;
+// number2++;
+// console.log(--number2);
+// console.log(number2);
+
+// console.log((2+3-7) *18)
+
+// var num = 20;
+// var num2 = 6;
+
+// if (num != 2) {
+//     alert("Hello ")
+// }
+
+// var value = +prompt("Enter a number");
+
+// if(!value) {
+//     alert("Not OK")
+// }
+
+// if (value < 6 && value > 2) {
+//     alert("you are close")
+// }
+// else if (value == 6) {
+//     alert("Exact number")
+// }
+// else if (value < 3) {
+//     alert("your  value is smaller")
+// }
+// else {
+//     alert("Enter a valid number")
+// }
+// console.log("test");
+
+// if(value == 16 || (value > 2 && value < 10)) {
+//     alert("correct  ")
+// }
+// var num = 3;
+// num =10;
+// var arr = [2, 4, 6, 8, 10, 12, 14, 86, 5974, 457];
+// console.log(arr.length);
+
+// arr[1] = 10;
+// arr[4] = 10;
+// arr[5] = 12;
+// arr[arr.length] = 14
+// console.log(arr);
+
+// arr.push(7,890,78)
+// arr.unshift(56, 89, 21)
+// arr.pop()
+// arr.shift()
+
+// arr.splice(2, 0, 0, 12)
+// arr.splice(4, 2, 4, 78, 64)
+// arr.splice(0, arr.length -2)
+// arr.splice(arr.length - 4, 4)
+// arr.splice(3, arr.length -6)
+// console.log(arr); 
+// var arr2 = arr.slice(2, 8)
+// console.log(arr,arr2);
+
+// const arr = ["aatir", "zeeshan", "tahir"];
+// const num_arr = [1, 9, 100, 4, 2]
+
+// console.log(arr.join());
+
+// const str = "aatir-ali-ahmed";
+// console.log(str.split("-"));
+
+// console.log(arr.sort());
+
+// 06-10-2025
+
+// for (num1 = 0; num1 <= 10; num1++){
+//     var num1 = prompt("Enter 1st number");
+//     console.log(num1);
+// }
+// var i;
+// for (i = 1; i < 10; i++) {
+
+// }
+
+// alert("Smit")
+
+// var str1 = prompt("Guess a word");
+
+// var arr = ["apple", "car", "mobile", "animal"];
+
+// if (str1 === str) {
+//     alert("You won")
+// }
+// var flag_correct = 0;
+// for (var i = 1; i <= arr.length; i++) {
+//     if (str1 == arr[i - 1]) {
+//         alert("You won")
+//         // correct = 9;
+//     }
+// }
+
+// if (correct == 0) {
+//     alert("You lost")
+// }
+
+
+// var arr = [[2, 4, 6, 8],"test", ["apple", "car", "mobile", "animal"]];
+
+// for (var i = 0; i < arr.length; i++) {
+// if (typeof arr[i] == "object") {
+// var nested_arr = arr[i]
+// for (var j = 0; j < nested_arr.length; j++) {
+//     console.log(nested_arr[j]);
+// }
+// } else {
+//     console.log(arr[i]);
+// }
+// console.log(arr[i]);
+// }
+
+// 12-06-2025
+
+// var inputs = [];
+// var odd = 0;
+// var even = 0;
+// for (var i = 1; i <= 3; i++) {
+//     var input = prompt("Enter a number");
+//     inputs.unshift(input)
+// };
+// console.log(inputs);
+
+// for (var j = 0; j < inputs.length; j++){
+//     if (inputs[j] % 2 == 0) {
+//         document.write(`${inputs[j]} is even.<br>`);
+//         even++; // even = even +1
+//     } else {
+//         document.write(`${inputs[j]} is odd.<br>`);
+//         odd++;
+//     }
+// };
+
+// console.log("your input has " + even + " even number and " + odd + " odd numbers");
+
+// for (let i = 1; i <= 10; i++) {
+//   let input = prompt("Enter a number:");
+
+//   let number = Number(input);
+
+//   if (!number && number !== 0) {
+//     alert("Invalid input. Try again.");
+//     i--;
+//     continue;
+//   }
+
+//   if (number % 2 === 0) {
+//     console.log(number + " is even");
+//   } else {
+//     console.log(number + " is odd");
+//   }
+// }
+
+// for (var i = 1; i <= 3; i++) {
+//     var user_input = prompt("Enter a number " + i + ":");
+// console.log(user_input);
+
+//     // while (isNaN(user_input) || user_input.trim() === "") {
+//     //     alert("You put invalid number. Please enter a valid number.");
+//     //     user_input = prompt("Enter number " + i + ":");
+//     // }
+
+//     var number = Number(user_input);
+
+
+//     if (number % 2 === 0) {
+//         console.log("User " + i + " put " + number +  " numbers it is even number<br>");
+//     } else {
+//         console.log("User " + i + " put " + number + " numbers it is odd number<br>");
+//     }
+// }
+
+// var input = prompt("Enter a word");// apple
+// var arr = ["car", "apple", "animal"];
+// var flag = true;
+// var spaces = false;
+// for (var i = 0; i < input.length; i++) {
+//     if(input.slice(i, i + 2) === "aa") {
+//         alert("No spaces")
+//         spaces = true;
+//     }
+// }
+//     for (var i = 0; i < arr.length; i++) {
+//         if (input.toLowerCase() === arr[i].toLowerCase()) {
+//             alert("You won")
+//             flag = false;
+//         }
+//     }
+
+// if (flag && !spaces) {
+//     alert("You loss")
+// }
+
+// var str = "APPLE_1234@#$"
+// var copiedValue = str.slice(0, 9)
+// console.log(str.toUpperCase());
+// console.log(str.length);
+// console.log(copiedValue);
+// console.log(str[6]);
+
+// console.log(str.charCodeAt(6));
+
+// var str = "Saylani"
+
+// console.log(str + " IT Institude");
+// console.log(str.concat(" IT Institude "));
+
+//14-06-2025
+
+// var str = "Apple 223#123"
+// console.log(str.length);
+// var copiedValue = str.slice(0, 10)
+// console.log(copiedValue);
+// str[0] = "T"
+// console.log(str);
+// var asci_codes_array = [];
+
+// for(var i = 0; i < str.length; i++) {
+//     var code = str.charCodeAt(i);
+//     asci_codes_array.push(code)
+// }
+// console.log(asci_codes_array);
+// console.log(str.indexOf(2, 8));
+
+// console.log(str.charAt(str.length - 2));
+
+// 17-06-2025
+
+//Q-1
+// var birth_year = +prompt("Enter you birth year");
+
+// var age = 2025 - birth_year
+
+// alert("Your age is " + age)
+
+//Q-2
+// var numbers_arr = [];
+// for (var i = 0; i < 5; i++) {
+//     var number = +prompt("Enter a number")
+//     numbers_arr.push(number)
+// }
+
+// var sum = 0;
+// for (var i = 0; i < 5; i++) {
+
+//     sum = sum + numbers_arr[i]
+// }
+// // console.log(sum);
+// var average = sum / 5;
+
+// alert("Average is " + average)
+
+//Q-3
+
+// const numbers = [1,3,5,6,8,9,10,15,20,21];
+
+// for(var i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 3 === 0) {
+//         console.log(numbers[i] + " is divisible by 3");
+
+//     }
+// }
+
+// Q-4
+
+// var number = +prompt("Enter a number to find factorial");
+// var factorial = number;
+// for(var i = number - 1; i > 1; i--){
+//     factorial = factorial * i;
+// }
+// console.log(factorial);
+
+//Q-5
+
+// var str = prompt("Enter a string");
+// var reversed = "";
+// for(var i = str.length - 1; i >= 0; i--){
+// //    reversed = reversed + str[i]
+// reversed += str[i]
+// }
+// console.log(reversed);
+
+// //Q-12
+// if(reversed === str) {
+//     alert("It is palindrome")
+// } else {
+//     alert("It is not palindrome")
+
+// }
+
+// var number = 4;
+// // number = number + 5
+
+// number /= 5
+// console.log(number);
+
+// 19-05-2025
+//Q-6
+
+// var str = prompt("Enter a string");
+// var specific_letter = "a";
+// var flag = 0;
+// for (var i = 0; i < str.length; i++) {
+//     if(str[i].toLowerCase() === specific_letter) {
+//         flag++
+//     }
+// }
+
+// console.log(specific_letter + " has occured " + flag + " times")
+
+//Q-7
+// var str = [];
+// for(var i=0; i<5; i++){
+//     var result = prompt('enter five name');
+//     str.push(result);
+// }
+// str.sort();
+
+// console.log(str);
+
+
+// let str = [];
+// for (i = 0; i < 5; i++) {
+//     str[i] = prompt("enter five name");
+// }
+// str.sort();
+
+// console.log(str);
+
+// Q-8
+// var number = +prompt("Enter a number ");
+// for (var i = 1; i <= 10; i++) {
+//     console.log(number + "X" + i + "=" + (number * i));
+// }
+
+//Q-9
+// let sentence = prompt("Enter a sentence ");
+// let count = 0 ;
+// var arr = ["a", "e", "i", "o", "u"]
+// for(let i=0 ; i<=sentence.length ; i++){
+//     let letter = sentence[i];
+//     // if(letter === "a" || letter ==="e" || letter ==="i" || letter === "o" || letter === "u"){
+//     //     count++;
+//     // }
+//     // if(sentence)
+// }
+// var vowels = sentence.includes("a")
+// console.log(vowels);
+
+// var sentence = prompt("Enter a sentence ");
+// var count = 0 ;
+// var arr = ["a", "e", "i", "o", "u"]
+// for(let i=0 ; i<=sentence.length ; i++){
+//     var new_sentence = sentence.toLowerCase();
+//     for (var j =0; j < arr.length; j++) {
+//         if(new_sentence[i] === arr[j]) {
+//             count++
+//         }
+//     }
+    
+// }
+// console.log(count);
+
+//Q-10
+// var product = ["phone", "laptop","key"]
+// var prices = [20000, 50000, 600]
+
+// for (let i = 0; i < 3; i++) {
+//     console.log(product[i] + "Rs - "+  prices[i]);
+    
+    
+// }
+
+//Q-11
+// var user = prompt("enter temperatuer");
+// var f_temp = (user * 9/5) + 32
+// alert(f_temp);
+
+
+//Q-13
+// var number = +prompt("enter a number");
+// var flag = false;
+// for(var i = 2; i < number; i++) {
+//     var remainder = number % i;
+//     console.log(remainder);
+    
+//     if (remainder === 0) {
+//         flag = true
+//         break
+//     }
+// }
+
+// if(!flag) {
+//     console.log(number + " is a prime number");
+// } else {
+//     console.log("it is not a prime number");
+    
+// }
+
+//Q-14
+
+// var num_arr = [2, 3, 5, 6, 8, 50, 97, 10, 60, 70 ]
+// var  largest = num_arr[0];
+// for(var i = 0 ; i < num_arr.length ; i++){
+//     if(num_arr[i] > largest){
+//         largest = num_arr[i]
+
+//     }
+// }
+// console.log(largest);
+
+// var num1 = +prompt("Enter a number");
+// var num2 = +prompt("enter a number");
+// var operator = prompt(" + , - ,* , /");
+// var result;
+// if (operator === "+") {
+//     result = num1 + num2
+// } else if(operator === "-"){
+//  result = num1 - num2
+// }else if(operator === "*"){
+//  result = num1 * num2
+// }else if(operator === "/"){
+//  result = num1 / num2
+// }
+// console.log("Result"+ result);
+
+// var arr1 = [23, 68, 80, 34, 56]
+// var arr2 = []
+
+// for( var i = 0; i < arr1.length; i++){
+//     if(arr1[i] > 50){
+//         arr2.push(arr1[i])
+//     }
+// }
+    
+// console.log(arr2)
