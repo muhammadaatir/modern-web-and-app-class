@@ -928,7 +928,7 @@
 //             count++
 //         }
 //     }
-    
+
 // }
 // console.log(count);
 
@@ -938,8 +938,8 @@
 
 // for (let i = 0; i < 3; i++) {
 //     console.log(product[i] + "Rs - "+  prices[i]);
-    
-    
+
+
 // }
 
 //Q-11
@@ -954,7 +954,7 @@
 // for(var i = 2; i < number; i++) {
 //     var remainder = number % i;
 //     console.log(remainder);
-    
+
 //     if (remainder === 0) {
 //         flag = true
 //         break
@@ -965,7 +965,7 @@
 //     console.log(number + " is a prime number");
 // } else {
 //     console.log("it is not a prime number");
-    
+
 // }
 
 //Q-14
@@ -1003,5 +1003,201 @@
 //         arr2.push(arr1[i])
 //     }
 // }
-    
+
 // console.log(arr2)
+
+//21-06-2025
+
+// var number = 126
+// var rounded_off = Math.round(125.845)
+// var rounded_off = Math.ceil(125.145)
+// var rounded_off = Math.floor(125.999)
+// console.log(rounded_off);
+
+// var number = Math.random();
+// console.log( Math.round(number*10)); // quantity of digits
+// console.log(Math.floor((number*80) + 20));  //range
+
+// var user_input = prompt("Enter head/tail");
+// var result = Math.floor(Math.random()*2)
+// console.log(result);
+
+// if(user_input === "head" && result === 0) {
+//     alert("You won")
+// } else if (user_input === "tail" && result === 1) {
+//     alert("You won")
+// } else if ((user_input === "head" && result === 1) || (user_input === "tail" && result === 0)) {
+//     alert("You lost")
+// } else {
+//     alert("Enter a valid value")
+// }
+
+// var value = getSquareAndCube(10, "square");
+
+// var number = Math.random();
+// var number = 0.88
+// var result1 = Math.round(number*100)
+// var result = Math.floor((number*25)+10);
+// console.log(result);
+// console.log(result1);
+
+// 24-06-2025
+
+// var str = "12.123";
+// var 
+// console.log(typeof parseInt(str))
+// console.log(parseFloat("abc") + 1);
+
+// var number = 1234;
+// console.log(typeof number.toString());
+
+// var result = 1.6666666;
+// console.log(result.toFixed());
+
+// console.log(Math.floor(result));
+
+// var rightNow = new Date();
+// console.log(rightNow.getDay());
+// var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var now = new Date();
+// var theDay = now.getDay();
+// var nameOfToday = dayNames[theDay];
+
+// console.log(nameOfToday);
+
+// var d = new Date();
+// var day = d.getDay();
+// var month =  d.getMonth();
+// var currentYear = d.getFullYear();
+// var currentHrs = d.getHours();
+// var currMins = d.getMinutes();
+// var currSecs = d.getSeconds()
+// console.log(currentYear);
+// console.log(currentHrs + " : " + currMins + " : " + currSecs)
+
+// d.setFullYear(2005)
+// d.setDate(3)
+// console.log(d);
+
+// function alertYourName(str, alert) {
+//     var name = prompt(str);
+//     console.log(alert + name);
+// }
+
+// alertYourName("Enter your name", "Hello ");
+// alertYourName("Enter your age", "Your age is ");
+
+// function getSum(num1, num2) {
+//     var sum = num1 + num2
+//     alert("Sum is " + sum)
+// }
+
+// var num1 = +prompt("Enter a number");
+// var num2 = +prompt("Enter a number");
+// getSum(num1, num2)
+
+// 26-06-2025
+// function getSquareAndCube(num, operation) {
+//     if(operation == "square") {
+//         var square = +num * +num
+//         console.log(square);
+//         return +square;
+//     } else if (operation == "cube") {
+//         var cube = +num * +num * +num
+//         console.log(cube);
+//         return +cube;
+//     } else {
+//         alert("Enter a valid operation.")
+//     }
+// }
+
+// var square1 = getSquare(6);
+
+
+// console.log(value + 10);
+
+// var number = +prompt("ENter a number");
+// function evenNumber(num) {
+//     if(num % 2 == 0) {
+//         return "It is even number"
+//     }
+//     return "It is an odd number"
+// }
+
+// console.log(evenNumber(number))
+// var add = 0;
+// function test() {
+//     var add = 4 + 5;
+//     console.log(add)
+//     return add;
+// }
+// var add = test();
+// console.log(add);
+
+//01-07-2025
+
+// function getMultiplicationTable(num, tableSize) {
+//     for(var i = 1; i <= tableSize; i++) {
+//         console.log(num + " * " + i + " = " + num * i);
+//     }
+// }
+
+// getMultiplicationTable(5, 15);
+
+// var sentence = prompt("Enter a sentence"); // it is a good car
+// var CapitializeString = ""; // It Is
+// function CapitializeWord() {
+//     for(var i = 0; i < sentence.length; i++) {
+//         if (sentence[i - 1] == " "){
+//             CapitializeString += sentence[i].toUpperCase() 
+//         } else if (i === 0) {
+//             CapitializeString += sentence[i].toUpperCase() 
+//         } else {
+//             CapitializeString += sentence[i] 
+//         }
+//     }
+// }
+// function CapitializeWord() {
+//     CapitializeString = sentence.split(" ");
+//     for (var i = 0; i < CapitializeString.length; i++) {
+//         if (word.length > 0) {
+//             var capitalized = word[0].toUpperCase() + word.slice(1).toLowerCase()
+//             capital.push(capitalized)
+//         } else {
+//             capital.push("")
+//         }
+//         CapitializeString = CapitializeString.join(" ");
+//     }
+
+// }
+// CapitializeWord()
+// console.log(CapitializeString)
+// var today = "Monday"
+// switch(today) {
+//     case "Sunday":
+//         alert("Today is Holiday");
+//         break
+//     case "Monday": 
+//         alert("Today is Working day");
+//         break
+//     default : 
+//     alert("Enter a valid day");
+// }
+
+//q-2
+
+// function reverse(str){
+//     return str.split('').reverse.join('');
+// }
+// var str=prompt()
+// var rev ="";
+// function reverse(str){
+//     for(let i = str.length-1; i >=0; i--){
+//         rev +=str[i];
+//     }
+// }
+// reverse(str);
+// console.log(rev);
+
+// [2.4.6.7.6.4]
+//[]
