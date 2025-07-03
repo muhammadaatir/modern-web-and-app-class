@@ -1201,3 +1201,71 @@
 
 // [2.4.6.7.6.4]
 //[]
+
+// 03-07-2025
+
+// var i =1;
+// while (i < 0) {
+//     console.log("test" + i)
+//     i++;
+// }
+
+// var i = 2;
+// do {
+//     console.log("test")
+//     i++;
+// } while (i <= 1)
+/*
+console.log(document.getElementById('input_email'))
+console.log(document.getElementById('save_btn'))
+console.log(document.getElementsByClassName('input'))
+console.log(document.getElementsByName("email"))
+*/
+
+// function showAlert() {
+//     alert("Hello")
+// }
+
+// console.log(document.querySelectorAll(".input"))
+
+// function getEmailAndPassword() {
+//     var user_email = "muhammadaatir@gmail.com"
+//     var user_password = "1234";
+//     var email = document.getElementById("email_input").value;
+//     var password = document.getElementById("pass_input").value;
+//     console.log(email)
+//     console.log(password)
+//     if(email.length === 0 || password.length === 0){
+//         alert("Both fields are required")
+//     } 
+    
+//     if (email === user_email && password === user_password) {
+//         alert("Successfully logged in")
+//         var heading = document.getElementById("value");
+//         heading.innerHTML = "<h1>Welcome</h1>";
+//     } else {
+//         alert("Email or password is incorrect")
+//     }
+//     console.log(value)
+// }
+
+// function headTail(user_value) {
+//     var result = Math.random()*2
+//     console.log(Math.floor(result))
+//     if(user_value === Math.floor(result)){
+//         var heading = document.getElementById("value");
+//         heading.innerHTML = "<h1>You Won</h1><button>Click to reload</button>";
+//         disbleButtons()
+//     } else {
+//         var heading = document.getElementById("value");
+//         heading.innerHTML = "<h1>You Loss</h1><button onClick='location.reload()'>Click to reload</button>";
+//         disbleButtons()
+//     }
+    
+// }
+// function disbleButtons() {
+//     var buttons = document.querySelectorAll(".btn")
+//     console.log(buttons)
+//     buttons[0].disabled = true
+//     buttons[1].disabled = true
+// }
