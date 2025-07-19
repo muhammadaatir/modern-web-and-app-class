@@ -1,0 +1,19 @@
+.text-blue {
+    color: blue;
+}
+.hidden {
+    display: none;
+}
+.bold {
+    font-weight: 700;
+}
+#img_container {
+    height: 100px;
+    width: 200px;
+}
+#modal_parent {
+    border: 2px solid #000;
+    width: 50%;
+    margin: auto;
+    display: none;
+}

@@ -1238,7 +1238,7 @@ console.log(document.getElementsByName("email"))
 //     if(email.length === 0 || password.length === 0){
 //         alert("Both fields are required")
 //     } 
-    
+
 //     if (email === user_email && password === user_password) {
 //         alert("Successfully logged in")
 //         var heading = document.getElementById("value");
@@ -1261,7 +1261,7 @@ console.log(document.getElementsByName("email"))
 //         heading.innerHTML = "<h1>You Loss</h1><button onClick='location.reload()'>Click to reload</button>";
 //         disbleButtons()
 //     }
-    
+
 // }
 // function disbleButtons() {
 //     var buttons = document.querySelectorAll(".btn")
@@ -1269,3 +1269,327 @@ console.log(document.getElementsByName("email"))
 //     buttons[0].disabled = true
 //     buttons[1].disabled = true
 // }
+
+//08-07-2025
+
+// function copyToClipboard() {
+//     var input = document.getElementById('my_input').value
+//     navigator.clipboard.writeText(input)
+// }
+// console.log(navigator.clipboard);
+
+// console.log(Math.floor((Math.random()*89)+10))
+// var name = "apple";
+// var arr = ["apple", "mango"]
+// console.log(arr.includes('a'))
+
+// function imagechange() {
+// console.log(event.type)
+// var image = document.getElementById("img")
+// if(event.type === "mouseover") {
+//     image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPIfiGgUML8G3ZqsNLHfaCnZK3I5g4tJabQ&s"
+// } else {
+//     image.src = "https://static.vecteezy.com/system/resources/thumbnails/022/967/153/small/the-landscape-of-natural-grass-field-with-ai-generated-free-photo.jpg"
+// }
+// var input = document.querySelectorAll("#text_input");
+//  console.log(input)
+// var arr = [1,2,3]
+// var arr2 = [2,3]
+// var arr3 = [3]
+// function test(array) {
+//     console.log(array)
+// }
+// test(arr3)
+// }
+// imagechange()
+//10-07-2025
+// var expandedPara = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+// function expandParagraph() {
+//     var paragraph_container = document.getElementById("paragraph");
+//     paragraph_container.innerHTML = expandedPara + "<a href='javascript:void(0);' onclick='truncatePara()'>See Less</a>";
+// }
+// function truncatePara() {
+//     var shortPara = expandedPara.slice(0, 100)
+//     var paragraph_container = document.getElementById("paragraph");
+//     paragraph_container.innerHTML = shortPara + " <a href='javascript:void(0);' onclick='expandParagraph()'>Read More</a>";
+// }
+
+// function expandParagraph() {
+//     var paragraph_container = document.getElementById("paragraph");
+//     console.log(paragraph_container.className)
+//     paragraph_container.className += " bold"
+// }
+
+// function imagechange() {
+//     console.log(event)
+//     var image = document.getElementById("img");
+//     if (event.type === "mouseout") {
+//         image.src = "https://static.vecteezy.com/system/resources/thumbnails/022/967/153/small/the-landscape-of-natural-grass-field-with-ai-generated-free-photo.jpg"
+//         return;
+//     }
+//     image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPIfiGgUML8G3ZqsNLHfaCnZK3I5g4tJabQ&s"
+// }
+// function imagechange() {
+//     var image = document.getElementById("img_container");
+//     console.log(image)
+//     if (event.type === "mouseout") {
+//         image.innerHTML = '<img src="https://static.vecteezy.com/system/resources/thumbnails/022/967/153/small/the-landscape-of-natural-grass-field-with-ai-generated-free-photo.jpg" width="200" id="img" alt="" />'
+//         return;
+//     } 
+//     image.innerHTML = '<video src="./video.mp4" width="200" height="100" autoplay muted></video>'
+
+// }
+// function changeStyles(action) {
+// var heading = document.getElementById("heading")
+// heading.style.fontSize = '60px'
+// heading.style.color = 'red'
+// var modal = document.getElementById("modal_parent")
+// if (action == "close") {
+//     modal.style.display = "none"
+//     return
+// }
+// modal.style.display = "block"
+// }
+
+// function changeStyles() {
+//     var para = document.getElementsByTagName("p")
+//     console.log(para)
+//     para[1].style.color = "green"
+// }
+//12-07-2025
+// var studentArray = ["Aatir", "0300000", "12", "10"];
+
+// var obj1 = {
+//     name: "Aatir",
+//     age: 12,
+//     class: 10,
+//     subjects: ["Maths", "Physics", "Chemistry"]
+// }
+// var obj2 = {
+//     name: "Aatir",
+//     age: 12,
+//     class: 10,
+//     subjects: ["Maths", "Physics", "Chemistry"]
+// }
+// var obj3 = {
+//     name: "Aatir",
+//     age: 12,
+//     class: 10,
+//     subjects: ["Maths", "Physics", "Chemistry"],
+//     test: {
+//         name: "Aatir",
+//         age: 12,
+//         class: 10,
+//     }
+// }
+// console.log(obj1.age)
+// console.log(obj1.name)
+// var row1 = document.getElementById("row1")
+// row1.innerHTML = `
+//     <td>${obj1.name}</td>
+//     <td>${obj1.age}</td>
+//     <td>${obj1.subjects}</td>
+//     <td>${obj3.test.name}, ${obj3.test.age}, ${obj3.test.class}</td>
+// `;
+
+// var arr = [{
+//     name: "test1",
+//     number: 123,
+// }, {
+//     name: "test2",
+//     number: 123,
+// }, {
+//     name: "test3",
+//     number: 123,
+// }]
+// for(var i = 0; i<3; i++) {
+//     console.log(arr[i].name)
+// }
+
+// var obj = {
+//     name: "test",
+//     number: 1234
+// }
+// // obj.name = "";
+// delete obj.name
+// console.log(obj)
+
+// var todos = [];
+// var count = 0;
+// function add() {
+
+//   let input = document.getElementById("todoInput").value;
+//   if (input.trim() !== "") {
+//     todos.push({ title: input, id: count });
+//     // todos.push(input);
+//     displayTodos();
+
+//     document.getElementById("todoInput").value = "";
+//     count++;
+//     console.log(todos)
+//   }
+// }
+// function displayTodos() {
+//   let list = document.getElementById("todoList");
+//   let html = "";
+
+//   for (let i = 0; i < todos.length; i++) {
+//     html += `
+//         <li>${todos[i].title}
+//             <button onclick="editTodo(${todos[i].id})">edit</button>
+//             <button onclick="deleteTodo(${todos[i].id})">delete</button>
+//             <div id="edit"></div>
+//         </li>`;
+//   }
+
+//   list.innerHTML = html;
+//   console.log(todos)
+// }
+
+// var edit_div = document.getElementById("edit")
+// function editTodo(id) {
+//   edit_div.innerHTML = `<h1>Edit Task</h1>
+//   <input type="text" id="edit_input">
+//   <button onclick="updateSpecificTask(${id})">Update</button>`
+//   // displayTodos()
+
+// }
+// function updateSpecificTask(id) {
+//   var edit_div = document.getElementById("edit")
+//   let input = document.getElementById("edit_input").value;
+//   todos.splice(id, 1, { id: id, title: input })
+//  edit_div.style.display = "none"
+//  displayTodos()
+// }
+// function deleteTodo(id) {
+//   for (var i = 0; i < todos.length; i++) {
+//     if (todos[i].id === id) {
+//       console.log(i)
+//       todos.splice(i, 1)
+//     }
+//   }
+//   displayTodos()
+// }
+
+// var obj = {
+//   name: "aatir"
+// }
+// var container = document.getElementById("container")
+// console.log(container.childNodes)
+// console.log(container.childNodes[3])
+// var todoList = [];
+// var todoCount = 0;
+// function add() {
+//   var inputValue = document.getElementById("todoInput")
+
+//   if (inputValue.value.trim() !== "") {
+//     todoList.push({ task: inputValue.value, id: todoCount });
+//     todoCount++;
+//     inputValue.value = ""
+//   }
+//   displayList();
+//   console.log(todoList)
+// }
+
+// function displayList() {
+//   var list = document.getElementById("todoList")
+//   list.innerHTML = ""
+//   for (var i = 0; i < todoList.length; i++) {
+//     list.innerHTML += `
+//     <li>${todoList[i].task}
+//       <button onclick="editTodo(${todoList[i].id})">edit</button>
+//       <button onclick="deleteTodo(${todoList[i].id})">delete</button>
+//       <div id="edit_${todoList[i].id}"></div>
+//     </li>
+//     `
+//   }
+// }
+
+// function deleteTodo(id) {
+//   for (var i = 0; i < todoList.length; i++) {
+//     if (todoList[i].id === id) {
+//       todoList.splice(i, 1)
+//     }
+//   }
+//   displayList()
+// }
+// var edit_enabled = 0
+// function editTodo(id) {
+//   if (edit_enabled === 0) {
+//     edit_enabled = 1;
+//     var edit_div = document.getElementById("edit_" + id)
+
+//     edit_div.innerHTML = `
+//     <input type="text" id="todoUpdate${id}">
+//     <button onclick="updateTask(${id})">Update</button>
+//     `
+//   }
+// }
+
+// function updateTask(id) {
+//   var edit_div = document.getElementById("edit_" + id)
+//   var edit_input = document.getElementById("todoUpdate" + id)
+//   console.log(edit_input.value)
+//   for (var i = 0; i < todoList.length; i++) {
+//     if (todoList[i].id === id) {
+//       todoList.splice(i, 1, {task: edit_input.value, id: id})
+//     }
+//   }
+//   edit_div.innerHTML = ""
+//   displayList()
+//   edit_enabled = 0
+// }
+
+// console.log()
+// var img = document.createElement("img")
+// img.setAttribute("src", "./download.jpeg")
+// var container = document.getElementById("container").appendChild(img)
+
+// var arr = [
+//   {
+//     name: "test",
+//     class: "ttest",
+//     number: 1
+//   },
+//   {
+//     class: "ttest",
+//     number: 2
+//   },
+//   {
+//     class: "ttest",
+//     number: 3
+//   },
+//   {
+//     name: "test",
+//     number: 4
+//   },
+// ]
+
+// var field = prompt("Enter missing field")
+// for (var i =0; i<arr.length; i++){
+
+//   if(!(field in arr[i])){
+//     console.log(`${field} is missing in number ${arr[i].number}`)
+//     // console.log(`name is missing in number ${arr[i].number}`)
+//   }
+// }
+  // console.log("test" in obj)
+
+
+
+// try catch
+
+
+// try{
+// console.log("object")
+// console.log("object")
+// console.log("object")
+//   // document.getElementById("container").createElement("p")
+// } catch {
+//   console.error("element is not working")
+// }finally {
+//   alert("code executed  ")
+// }
+// console.log("object")
+// console.log("object")
+// console.log("object")
