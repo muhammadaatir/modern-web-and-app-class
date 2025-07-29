@@ -107,7 +107,7 @@
 
 // console.log(number)
 // var question = "Enter your name"
-// var user_name = prompt(question)
+// var usename = prompt(question)
 
 // alert("Hello" + " " + user_name)
 
@@ -1573,7 +1573,7 @@ console.log(document.getElementsByName("email"))
 //     // console.log(`name is missing in number ${arr[i].number}`)
 //   }
 // }
-  // console.log("test" in obj)
+// console.log("test" in obj)
 
 
 
@@ -1593,3 +1593,379 @@ console.log(document.getElementsByName("email"))
 // console.log("object")
 // console.log("object")
 // console.log("object")
+
+// var obj = {
+//   name: "test"
+// }
+
+// var obj1 = obj;
+// var obj2 = obj1.name;
+
+// obj.name = "ahmed";
+// var arr = [1,3]
+// var arr1 = arr;
+// arr[10] = 10;
+// console.log(arr, arr1)
+
+// var obj = {
+//   name: "test",
+//   number: 1234,
+//   test: ["test"]
+// }
+
+// console.log(('name' in obj))
+// for (var abc in obj) {
+// console.log(obj[abc])
+
+// }
+// var data = {
+//   Toyota: {
+//     Corrolla: {
+//       2015: {
+//         name: "Toyota Corolla 2015",
+//         color: "black",
+//         engine: "1200CC"
+//       },
+//       2025: {
+//         name: "Toyota Corolla 2025",
+//         color: "black",
+//         engine: "1200CC"
+//       }
+//     },
+//     Yaris: {
+//       2015: {
+//         name: "Toyota Yaris 2015",
+//         color: "black",
+//         engine: "1200CC"
+//       },
+//       2025: {
+//         name: "Toyota Yaris 2019",
+//         color: "black",
+//         engine: "1200CC"
+//       }
+//     }
+//   },
+//   KIA: {
+//     Sportage: {
+//       2020: {
+//         name: "Toyota Sportage 2015",
+//         color: "black",
+//         engine: "1200CC"
+//       },
+//       2024: {
+//         name: "Toyota Sportage 2015",
+//         color: "black",
+//         engine: "1200CC"
+//       }
+//     }
+//   },
+//   Honda: {
+//     Civic: {
+//       2015: {
+//         name: "Toyota Civic 2015",
+//         color: "black",
+//         engine: "1200CC"
+//       },
+//       2025: {
+//         name: "Toyota Civic 2015",
+//         color: "black",
+//         engine: "1200CC"
+//       }
+//     }
+//   }
+// }
+
+// var car_models = document.getElementById("car_models")
+// var company_dropdown = document.getElementById("company_dropdown")
+// var car_display = document.getElementById("cars")
+// function onCompanySelect() {
+//   if (company_dropdown.value !== "0") {
+//     car_models.innerHTML = "";
+//     car_display.innerHTML = "";
+//     car_models.innerHTML = "<option value='0'>Select car model</option>";
+//     car_models.style.display = "block"
+//     showCarModels()
+//   } else {
+//     alert("Select a proper company")
+//   }
+// }
+// function showCarModels() {
+
+//   for (var key in data[company_dropdown.value]) {
+//     car_models.innerHTML += `
+//       <option value=${key}> ${key} </option>
+//       `
+//   }
+
+// }
+
+// function onCarSelect() {
+//   var available_car_models = data[company_dropdown.value][car_models.value]
+//   car_display.innerHTML = ""
+//   if (car_models.value !== "0") {
+//     for (var key in available_car_models) {
+//       var car = available_car_models[key]
+//       car_display.innerHTML += `
+//     <h1> ${car.name}
+//     `
+//     }
+//   } else {
+//     alert("select a propper model")
+//   }
+//   console.log(data[company_dropdown.value][car_models.value])
+// }
+// var date = moment().format("hh:mm:ss")
+// console.log(date)
+// test = 123;
+// var test = 1234;
+// console.log(test1)
+// const test1 = "test";
+// test1 = 124;
+// const test3 = "test"
+// test3 = 123;
+
+// function test() {
+//   var test2 = "test";
+// }
+// test()
+// console.log(test2)
+
+// const a = 1;
+
+// if (a) {
+//    let a = 2;
+//    a = 10;
+// a =3
+// }
+
+// console.log(a)
+// 24-07-2025
+
+// {
+//     const c = 9
+//  a =4;
+//     // b = 2;
+//     console.log(c)
+// }
+// console.log(a)
+// var a = 1;
+// let b = 3;
+// const c = 5;
+
+// function test() {
+//     c = 10;
+//     console.log(c)
+//     // console.log(c)
+//     // console.log(c)
+// }
+// console.log(c)
+// test();
+// const url = window.location.href;
+// const index = url.indexOf('?');
+// const search = url.slice(index+1, url.length)
+// console.log(search)
+
+// const heading =  document.getElementById("heading")
+// function getText() {
+//     const text = document.getElementById("text");
+//     localStorage.setItem("text", text.value)
+//     window.location.reload()
+// }
+// console.log(
+
+//     localStorage.getItem("text")
+// );
+
+// 26-07-2025
+
+// function register() {
+//     const r_email = document.getElementById('r_email')
+//     const r_password = document.getElementById('r_password')
+//     const r_number = document.getElementById('r_number')
+//     const r_name = document.getElementById('r_name')
+
+//     let users = JSON.parse(localStorage.getItem("users"))
+//     if (!users) {
+//         users = []
+//     }
+//     if (r_email.value && r_number.value && r_name.value && r_password.value) {
+//         for (var i = 0; i < users.length; i++) {
+//             if (users[i].email === r_email) {
+//                 alert("User is already registered")
+//                 emptyInputvalues(r_email, r_name, r_password, r_number)
+
+//                 return;
+//             }
+
+//         }
+//         const user_obj = {
+//             name: r_name.value,
+//             email: r_email.value,
+//             number: r_number.value,
+//             password: r_password.value
+//         }
+//         users.push(user_obj);
+//         localStorage.setItem("users", JSON.stringify(users))
+//         emptyInputvalues(r_email, r_name, r_password, r_number)
+//         alert("user has been registered")
+//     } else {
+//         alert("Enter values correctly")
+//     }
+// }
+
+// function emptyInputvalues(email, number, name, password) {
+//     for (let i = 0; i < arguments.length; i++) {
+//         console.log(arguments[i])
+//         arguments[i].value = "";
+//     }
+// }
+// let flag = false
+// function login() {
+
+//     let users = JSON.parse(localStorage.getItem("users"))
+//     const email = document.getElementById('email')
+//     const password = document.getElementById('password')
+//     for (var i = 0; i < users.length; i++) {
+//         if (users[i].email === email.value && users[i].password === password.value) {
+//             flag = true
+//             alert("User Logged in")
+//             window.location.reload()
+//         }
+//         else if (users[i].email === email.value && users[i].password !== password.value) {
+//             flag = true
+//             alert("Incorrect password")
+//             emptyInputvalues(password)
+//             password.focus()
+//         }
+//     }
+//     if (!flag) {
+//         alert("User is not registered")
+//         emptyInputvalues(email, password)
+
+//     }
+// }
+
+// function remove() {
+//     localStorage.clear()
+// }
+
+
+//colsures
+// let a = 2;
+// function func1() {
+//     let a = 1;
+//     console.log(a, "outer function ")
+//     function func2() {
+//         // a=4
+//         //  test = 123
+//         console.log(a, "inner function")
+//         function func3 () {
+//             console.log(a, "inner 3 function")
+
+//         }
+//         func3()
+//     }
+//     a = 20
+//     func2()
+//     console.log(test)
+//     // // a=2
+// }
+// // const abc = func1()
+// func1()
+// let 
+// function func1(test) {
+//     function func2(param) {
+//         let str = "test";
+//         // console.log(str)
+//         // console.log(test)
+
+//     }
+//     function func3() {
+
+//         console.log(str)
+//     }
+
+//     func2(2)
+//     func3()
+//     console.log(str)
+// }
+
+// func1(123)
+
+// function add(num1, num2) {
+//     const sum = +num1 + +num2;
+//     console.log(sum)
+//     // return sum;
+// }
+// add(2,4)
+// const sum = add(2,4)
+// console.log(sum)
+// function makeFunc(param1) {
+//   let name = "aatir";
+//   console.log(param1)
+//   param1 = param1+2
+//   function displayName() {
+//     console.log(param1);
+//   }
+//   name = "test"
+
+//   return displayName;
+// }
+
+// const myFunc = makeFunc("1234");
+
+// myFunc();
+
+
+
+// function changeColor(color) {
+//     document.body.style.backgroundColor = color;
+//     function addElement() {
+//         if (color === "green") {
+
+//             document.getElementById("container").innerHTML = `
+//             <h1>Hello World</h1>
+//             `
+//         }
+//     }
+//     addElement()
+// }
+
+// function func1(param) {
+//     const abc = 1234;
+//     console.log(test)
+//     function func2() {
+//         let test = "123"
+//         function func3() {
+//             console.log(test)
+//         }
+//         func3()
+//     }
+//     return func2
+// }
+// const myFunc = func1("aatir")
+
+// const newTab = window.open()
+// newTab.document.write(`
+//     <h1>Hello WOrld</h1>
+//     `)
+
+// function newTab() {
+//     // window.open("https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures#lexical_scoping")
+//     window.open("home.html", "win1", "width=420,height=380")
+// }
+
+// var monkeyWindow = window.open("", "win1", "width=840,height=380,top=100,left=200");
+
+// console.log(localStorage, "localstorage")
+// console.log(sessionStorage, "sessionStorage")
+
+// function checkForPopBlocker() {
+//     var testPop = window.open("", "", "width=100,height=100");
+//     if (testPop === null) {
+//         alert("Please disable your popup blocker.");
+//     }
+//     testPop.close();
+// }
+
+// checkForPopBlocker()
