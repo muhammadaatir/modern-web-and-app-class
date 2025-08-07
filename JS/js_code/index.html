@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -113,9 +115,72 @@
 
     <div></div>
 <button onclick="remove()">Remove all users</button> -->
-<div id="container"></div>
+    <!-- <div id="container"></div>
 <button onclick="newTab()">Test</button>
-<button onclick="changeColor('orange')">Orange</button>
+<button onclick="changeColor('orange')">Orange</button> -->
+
+    <!-- <input type="text" id="text_input"> -->
+    <!-- <div id="muted_text"></div> -->
+    <!-- <br>
+<select onchange="dropdownSelect()" name="" id="city_dropdown">
+    <option id="city_placeholder" value="placeholder">Select a city</option>
+    <option value="khi">Karachi</option>
+    <option value="lhr">Lahore</option>
+    <option value="isl">Isl</option>
+</select>
+<div id="muted_text_dropdown"></div>
+<br>
+<input type="radio" name="city">khi
+<input type="radio" name="city">lhr
+<input type="radio" name="city">isl
+<div id="muted_text_radio"></div>
+<br>
+<br> -->
+    <!-- <button class="submit_button">Blue</button>
+<button class="submit_button">green</button>
+<button class="submit_button">red</button>
+
+<script>
+const btns = document.querySelectorAll(".submit_button")
+const color = ["blue", "green", "red"]
+for(let i = 0; i < btns.length; i++){
+    btns[i].onclick = colorChange(color[i]);
+} -->
+
+
+
+    <!-- // function formSubmit() {
+//     const input = document.getElementById("text_input")
+//     const regex =/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+//     if(input.value.match(regex)){
+//         console.log("passed")
+//     } else {
+//         console.log("failed")
+//     }
+// }
+function colorChange(color) {
+    function changeBodyColor() {
+        document.body.style.backgroundColor = color
+    }
+    return changeBodyColor;
+} -->
+    <!-- <input type="text" id="email">
+    <button id="btn" onclick="func()">CLicked</button> -->
+    <div id="cards" class="d-flex flex-wrap">
+
+    </div>
+    </script>
+    <!-- <form> -->
+    <!-- Enter a password<br>
+        (8-12 characters, at least 1 number, no spaces)<br>
+        <input type="text" id="f1">
+        <input type="submit" value="Submit">
+        <button onclick="checkPassword()">Submit</button> -->
+    <!-- </form> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"
         integrity="sha512-4F1cxYdMiAW98oomSLaygEwmCnIP38pb4Kx70yQYqRwLVCs3DbRumfBq82T08g/4LJ/smbFGFpmeFlQgoDccgg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

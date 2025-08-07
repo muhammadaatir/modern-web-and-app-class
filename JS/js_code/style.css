@@ -21,3 +21,8 @@
 #car_models {
     display: none;
 }
+
+.card {
+    border: 1px solid black;
+    margin-bottom: 5px;
+}

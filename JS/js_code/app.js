@@ -1969,3 +1969,322 @@ console.log(document.getElementsByName("email"))
 // }
 
 // checkForPopBlocker()
+
+//31-07-2025
+
+// function formSubmit() {
+//     const input = document.getElementById('text_input')
+//     const city_dropdown = document.getElementById('city_dropdown')
+//     const muted_text = document.getElementById('muted_text')
+//     const muted_text_dropdown = document.getElementById('muted_text_dropdown')
+//     const muted_text_radio = document.getElementById('muted_text_radio')
+//     const radio_btns = document.getElementsByName("city");
+//     let radio_flag = false;
+//     for (let i = 0; i < radio_btns.length; i++) {
+//         if(radio_btns[i].checked){
+//             radio_flag = true
+//         }
+//     }
+//     if(input.value.trim().length == 0) {
+//         // alert("input cannot be submitted empty")
+//         muted_text.innerText = "input cannot be submitted empty"
+//         // input.focus();
+//         muted_text.style.color = "red"
+//         return;
+//     } else if (city_dropdown.value === "placeholder" || city_dropdown.value.length == 0){
+//         muted_text.innerText = ""
+//         muted_text_dropdown.innerText = "select a proper value"
+//         muted_text_dropdown.style.color = "red"
+//         return;
+//     } else if (!radio_flag){
+//         muted_text_dropdown.innerText = ""
+//         muted_text_radio.innerText = "select a city"
+//         return
+//     }
+//     muted_text_radio.innerText = ""
+//     console.log(input.value)
+// }
+
+// function dropdownSelect() {
+//     const value = event.target.value;
+//         const city_dropdown = document.getElementById('city_dropdown')
+
+//     if(city_dropdown.selectedIndex !== 0){
+//         document.getElementById("city_placeholder").style.display = "none"
+//     }
+//     console.log()
+// }
+
+
+// const email = "aatir"
+// console.log(email.includes("@"))
+// function formSubmit() {
+//     const input = document.getElementById("text_input")
+//     const regex =/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+//     // console.log(input.value)
+//     if(input.value.match(regex)){
+//         console.log("passed")
+//     } else {
+//         console.log("failed")
+//     }
+// }
+
+// function checkPassword() {
+//     try {
+//         var pass = document.getElementById("f1").value;
+//         if (pass.length < 8) {
+//             throw "Please enter at least 8 characters.";
+//         }
+//         if (pass.indexOf(" ") !== -1) {
+//             throw "No spaces in the password, please.";
+//         }
+//         var numberSomewhere = false;
+//         let arr = [48,49,50,51,52,53,54,55,56,57]
+//         for (var i = 0; i < pass.length; i++) {
+//             const code = pass.charCodeAt(i)
+//             if(arr.includes(code)){
+//                 numberSomewhere = true;
+//             }
+//         }
+//         if (numberSomewhere === false) {
+//             throw "Include at least 1 number.";
+//         }
+//         console.log("passed")
+//     }
+//     catch (err) {
+//         alert(err);
+//     }
+// }
+
+// 02-08-2025
+// let a = 1;
+// const b = 2;
+// var c;
+
+// var a = 5;
+// const b = 7;
+
+// a =7;
+
+// function test() {
+//     let a = 0
+// }
+// let a = 1;
+// const b = 2;
+// var c = 3;
+// {
+//     var c = 5;
+//     const b = 15;
+//     let a = 10;
+//     console.log(a, b, c)
+// }
+// console.log(a, b, c)
+
+// const value1 = 10;
+// const value2 = 10;
+// function sumFunc(a,b) {
+// const sum = a + b
+
+// // console.log(sum)
+// return sum
+// }
+
+// var sum = sumFunc(value1,value2)
+// console.log(sum)
+// const btn = document.getElementById("btn")
+// btn.onclick = clickBtn("123")
+// function clickBtn(a) {
+//     function test(){
+
+//         console.log(a)
+//     }
+//     return test;
+// }
+// function test(a){
+//     console.log("testing")
+// }
+// const btn = document.getElementById("btn")
+// btn.addEventListener("click", test("a"))
+
+// function parentFunc(param) {
+//     const a = 10;
+//     console.log("test")
+//     function child1() {
+//         console.log(param)
+//     }
+//     return child1
+// }
+
+// const 
+// func = parentFunc("10")
+// func()
+// function func() {
+//     const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*-=?&])[A-Za-z\d@$!%-*?&]{8,}$/;
+//     const email = document.getElementById("email")
+//     if (email.value.trim().length < 1 || !regex.test(email.value)) {
+//         alert("Enter proper password")
+//         return
+//     }
+//     console.log("submitted")
+// }
+
+// 08-05-2025
+
+// console.log("a")
+// function test() {
+//     var a = 1;
+//     console.log(a)
+//     setTimeout(function () {
+//         console.log("b1")
+//     }, 5000)
+// }
+// test()
+// const show_console = setInterval(function () {
+//     console.log("b2")
+
+// }, 1000)
+// setTimeout(function () {
+//     clearInterval(show_console);
+//     console.log("stop")
+// }, 5000)
+
+
+// console.log("c")
+// console.log("c")
+// console.log("c")
+// console.log("c")
+// console.log("c")
+// console.log("c")
+
+// console.log("3")
+
+// setTimeout(function() {
+//     console.log("a")
+// }, 1000)
+// setTimeout(function() {
+//     console.log("b")
+// }, 5000)
+// setTimeout(function() {
+//     console.log("c")
+// }, 2000)
+
+// console.log(2)
+// const myPromise = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//         resolve({name: "aatir"})
+//     }, 1000)
+//     setTimeout(function () {
+//         reject({name: null})
+//     }, 5000);
+// })
+// console.log(myPromise)
+// myPromise.then(function (res) {
+//     console.log(res)
+//     console.log("success")
+
+// })
+// .catch(function (rej) {
+//      console.log(rej)
+//         console.log("failed")
+//     })
+
+// 07-08-2025
+
+// function test(a, b) {
+// console.log(arguments)
+// }
+// test(1,2)
+
+// const func1 = () => {
+//     console.log("test")
+// }
+// func1()
+
+
+// setTimeout(() => {
+
+// }, 2000)
+
+// const input = document.getElementById("email")
+// input.addEventListener("change", () => {
+//     console.log("test")
+// })
+
+// function test(name, age){
+//     this.name = name;
+//     this.age = age
+// }
+
+// const test1 = new test("Aatir", 21)
+// console.log(test1)
+
+// const my_promise = new Promise ((res, rej) => {
+//     setTimeout(() => {
+//         res({name: "ok"})
+//     }, 1000)
+// }) 
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1').then((response) => {
+//     console.log("resolved", response.json())
+// })
+//     .catch(() => {
+//         console.log("rejected")
+//     })
+
+// fetch('https://dummyjson.com/users')
+//     .then((response) => response.json())
+//     .then(json => {
+//         console.log(json)
+//         renderCards(json.users)
+//     })
+
+
+// function renderCards(data) {
+//     let card_container = document.getElementById("cards")
+//     for (let i = 0; i < data.length; i++) {
+//         console.log(data[i])
+//         card_container.innerHTML += `
+//      <div class="card me-2 my-3" style="width: 18rem;">
+//          <div class="card-body">
+//              <h5 class="card-title">${data[i].firstName}</h5>
+//              <h6 class="card-subtitle mb-2 text-body-secondary">${data[i].email}</h6>
+//                <p class="card-text">${data[i].phone}</p>
+//             </div>
+//         </div>
+//         `
+//     }
+// }
+
+// fetch('https://jsonplaceholder.typicode.com/posts', {
+//     method: "POST",
+//     headers: {
+//         "Content-Type": "application/json"
+//     },
+//     body: JSON.stringify({ title: "testing", body: "testing content", user_id: 2 })
+// }).then((response) => response.json())
+// .then(data => console.log(data))
+
+// fetch('https://jsonplaceholder.typicode.com/posts/1')
+//     .then((response) => response.json())
+//     .then(json => {
+//         console.log(json)
+//     })
+
+// async function fetchData() {
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+//             method: "POST",
+//             headers: {
+//                 "Content-Type": "application/json"
+//             },
+//             body: JSON.stringify({ title: "testing", body: "testing content", user_id: 2 })
+//         })
+//         const data = await response.json()
+//         console.log(response)
+//         console.log(data)
+//     } catch (error) {
+//         console.error(error)
+//     }
+//     console.log("test")
+// }
+// fetchData()
