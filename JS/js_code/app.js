@@ -2288,3 +2288,524 @@ console.log(document.getElementsByName("email"))
 //     console.log("test")
 // }
 // fetchData()
+// const getWeather = async () => {
+//     const city = document.getElementById("city").value
+//     try {
+//         const FetchApi = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=28ce27ea031454725964d23a80efbb5f&units=metric`
+//         )
+
+//         const data = await FetchApi.json()
+//         console.log(data)
+
+//         console.log(data.main.temp)
+//         console.log(data.main.feels_like)
+//         console.log(data.weather[0].main)
+//     } catch (err) {
+//         console.error(err)
+//         Swal.fire({
+//             title: 'Wrong city',
+//             text: 'Enter a correct city',
+//             icon: 'warning',
+//             confirmButtonText: 'Cool'
+//         })
+//     }
+
+// }
+
+// const initialWeather = () => {
+//     const location = navigator.geolocation.getCurrentPosition( async(location) => {
+//         const lat = location.coords.latitude;
+//         const long = location.coords.longitude;
+
+//         const FetchApi = await fetch(`
+//             https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=28ce27ea031454725964d23a80efbb5f&units=metric`
+//         )
+
+//         const data = await FetchApi.json()
+//         console.log(data)
+
+//         console.log(data.main.temp)
+//         console.log(data.main.feels_like)
+//         console.log(data.weather[0].main)
+//     }, (error) => {
+//         console.log(error)
+//     })
+
+// }
+// initialWeather()
+
+// 12-08-2025
+
+
+// const arr = [2, 4, 5]
+// const obj = {name: "aatir", num: 1234}
+// .map() har element pr function k code run krta hai 
+// Object.values(obj).map(value => {
+//     console.log(value)
+// })
+
+// for(let i = 0; i < arr.length; i++) {
+//     console.log(arr[i])
+// }
+
+// const value = arr.map((num, index) => {
+//     // console.log(index)
+//     if(index == 1) {
+//         console.log(num.name)
+//         return
+//     }
+//     console.log(num)
+// })
+
+// console.log(value)
+
+// new array return krta un elements ki jo condition pass karen 
+// const values = arr.filter(num => num % 2 !== 0);
+
+// console.log(values)
+
+//.some check krta hai kam az kam aik element condition pass karen 
+// console.log(arr.some(num => num % 2 == 0))
+
+//.some check krta hai k saare element condition pass karen 
+// console.log(arr.every(num => num % 2 == 0))
+
+// Pehla element return krta hai jo condition ko true karen
+// console.log(arr.find(num => num % 2 == 0))
+
+//.reduce()
+//.includes()
+//.reverse()
+// console.log(arr.reduce((sum, num) => sum - num, 0))
+// ` https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=28ce27ea031454725964d23a80efbb5f&units=metric`
+
+// 16-08-2025
+// const number = 90;
+
+// if(number) {
+//     console.log("test")
+// }
+
+// number < 100 ? console.log("test") : number < 150 ?  console.log("test150") : console.log("test200"
+
+// function sum(param = 2) {
+// console.log(param)
+// return param + 2;
+// }
+
+// console.log(sum(10))
+
+// const obj = {
+//     name: "aatir",
+//     obj2: {
+//         name: "test"
+//     }
+// }
+
+// const obj1 = {name: "testing"}
+
+// const {name, obj2: {name: name3}, obj2} = obj
+// const {name: name2} = obj1
+// console.log(obj2)
+
+// const arr = [1,2,4]
+
+// // console.log(Object.values(obj))
+// // console.log(obj?.age?.name)
+// console.log(arr?.[5]?.[1])
+
+// console.log("test")
+// obj?.func?.()
+
+
+// setTimeout(() => {
+//     console.log(1)
+
+// })
+
+// setTimeout(() => {
+//     console.log(2)
+
+// }, 500)
+
+// console.log(3)
+
+// const arr = [1, 2, 3, 4]
+
+// const [a,b, ...rest] = arr
+
+// console.log(a)
+
+// console.log(
+//     arr.forEach((value, index) => {
+//         console.log(value)
+//     })
+// )
+
+
+// const getCurrencyExchane = async () => {
+//     const FetchApi = await fetch(`
+//         https://v6.exchangerate-api.com/v6/d107d8c2c02aee65c2eb2abe/pair/PKR/USD/284`
+//     )
+
+//     const data = await FetchApi.json()
+//     console.log(data)
+// }
+// getCurrencyExchane()
+
+
+// 23/08/2025
+
+// function test(a,b,c,...others) {
+//     // console.log(others)
+//     // console.log(a,b,c)
+//     function test1() {
+//         console.log(others)
+//     }
+//     test1()
+// }
+// test(1,2,3,4,5,6)
+
+// const arr = ["aatir", "ali", "ahmed"]
+
+// const [my_name, ali, ...names] = arr
+
+// console.log(names[0])
+
+// const obj = {
+//     name: "test",
+//     number: 1234,
+//     class: "smit"
+// }
+
+// const { name: student, class: className, ...keys} = obj
+// console.log(keys.number)   
+
+// // const arr = [10, 18, 22] // [10,18,22,50,60]
+// const arg = {
+//     no1: 13,
+//     no2: 15,
+//     no3: "test"
+// }
+// const {no1, no2, no3} = arg
+// const arr = Object.values(arg)
+// function sum(param1, param2, param3){
+//     console.log(param1+param2+param3)
+//     return param1+param2+param3
+// }
+// sum(no1, no2, no3)
+// const numberSum = sum(...arr)
+// console.log(numberSum)
+// const newArray = [50,60, ...arr]
+// console.log(newArray)
+
+// const newObj = {
+//     ...obj,
+//     rollNo: 1234,
+
+// }
+// console.log(newObj)
+
+// const fetchWeather = async () => {
+//     const weatherApi = await fetch('https://api.openweathermap.org/data/2.5/weather?lat=24.92&lon=67.08&appid=5d184555e7e3b47f9014028cacc99e15&units=metric')
+//     // console.log(weatherApi)
+//     const response = await weatherApi.json()
+//     console.log(response)
+//     const {temp} = response.main
+//     console.log(response.weather)
+//     const [main] = response.weather
+//     console.log(main.main)
+// }
+// fetchWeather()
+
+// const my_promise = new Promise ((res, rej) => {
+//     setTimeout(() => {
+//         res({name: 1234})
+//     }, 1000)
+// })
+
+// my_promise.then((result) =>{
+//     console.log(result)
+//     console.log("passed")
+// })
+// .catch(() => {
+//     console.log("failed")
+// })
+// const 
+//26-08-2025
+// function test(a,...others) {
+//     console.log(others)
+// }
+// test(10,15,20,25,30);
+
+// const arr = [10,15,20,25,30]
+
+// const [a, b, ...items] = arr
+
+// console.log(items)
+
+// const obj = {
+//     name: "aatir",
+//     address: "karachi",
+//     number: 1234
+// }
+// const newObj = {
+//     ...obj,
+//     class: "smit batch 16",
+//     institude: "saylani"
+// }
+
+// const {abc, name, ...others} = obj
+
+// console.log(others)
+// const arr = [10,15,20];
+
+// const newArr = [...arr, 40, 50]
+
+// function test(a,b,c) {
+//     console.log(a,b,c)
+// }
+// test(...arr)
+
+// console.log(newArr)
+
+// const obj = {
+//     name: "aatir",
+//     address: {city: "karachi"}
+// }
+
+// const stringObj = JSON.stringify(obj)
+// const newObj = JSON.parse(stringObj)
+// obj.address.city = "test";
+
+
+// console.log(obj.address.city)
+// console.log(newObj.address.city)
+
+// const newObj = {...obj}
+
+
+// console.log(obj.address.city)
+// console.log(newObj.address.city)
+
+
+
+
+
+// const obj = {
+//     name: "aatir",
+//     address: [1,2,3]
+// }
+
+// const copiedObj = { ...obj }
+
+// obj.address[2] = 10
+// console.log(obj)
+// console.log(copiedObj)
+
+// const arr = [10,15,{name: "aatir"}];
+
+// const newArr = [...arr, 40, 50]
+
+// arr[2].name = "testing";
+// arr[1] = 20;
+
+// console.log(arr)
+// console.log(newArr)
+
+// const arr = [10,15,{name: "aatir"}];
+
+// const newObj = {
+//     first: arr,
+//     id: 1,
+//     third: "saylani"
+// }
+
+// const copiedObj = {...newObj, id: 2}
+// const copiedObj2 = {...newObj, id: 3}
+
+// newObj.first[0] = 3;
+
+// console.log(copiedObj2)
+
+// 28-08-2025
+
+// const obj  = {
+//     field1: "a",
+//     field2: 2,
+//     field3: [1,[2,4],3],
+//     field4: {city: "karachi"}
+// }
+// obj.field3 = [10]
+// const finalObj = {
+//     ...obj
+// }
+
+
+// console.log(obj, "obj")
+// console.log(finalObj, "finalObj")
+
+// const arr = [2, 4, "test", [1,2,3], {name: "aatir"}]
+
+// const finalArr = [...arr, "test", "saylani"]
+// arr[4] = "smit"
+
+// console.log(arr)
+// console.log(finalArr)
+
+// addEventListener("keydown", (event) => {
+//     console.log(event)
+// }) 
+
+// for (var i = 0; i < 3; i++) {
+//     setTimeout(() => console.log(i), 1000)
+// }
+
+// const x = 10;
+// x = 20 * 10;
+// console.log(x)
+
+// console.log(a);
+// let a = 5;
+
+// console.log(b)
+// var b = 10;
+
+// function greet(name = "Guest") {
+//     console.log(`Welcome ${name}`)
+// }
+// greet()
+// greet("Aatir")
+
+
+// const user = {
+//     name: "Aatir",
+//     phone: 12345,
+//     address: { city: "Karachi" }
+// }
+// const { name, number, address: { city } } = user
+
+// console.log(number, city)
+
+// let arr = [5, 10, 15];
+// console.log(arr.find(x => x > 7))
+// console.log(arr.findIndex(x => x > 7))
+
+// let obj = {
+//     a: 1,
+//     b: 2
+// }
+// let clone = { ...obj, b: 10 }
+// console.log(clone)
+
+
+// function testing(value) {
+//     console.log(value+2)
+// }
+// testing(test)
+
+// function main () {
+//     let count = 0
+//     return function() {
+//         return ++count
+//     }
+// }
+
+// let func = main();
+// console.log(func())
+// console.log(func())
+// console.log(typeof null)
+// console.log(NaN === NaN)
+// console.log(!!"false")
+// console.log(+"")
+// console.log(+true)
+// console.log(+false)
+// console.log(0.1 + 0.2)
+
+// const obj = {
+//     a: 5
+// }
+// let {a = 10, b = 20} = obj
+// console.log(a, b)
+
+// const user = {
+//     profile: {name: "Ali"}
+// }
+
+// console.log(user.profile.name)
+// console.log(user.address.city)
+// console.log(user?.address?.city)
+
+// const arr = [1,3,4,65]
+// const {x, y, ...rest} = arr
+// console.log(rest)
+
+// async function f() {
+//     console.log("a")
+//     await null;
+//     console.log("b")
+// }
+// f();
+// console.log("c")
+const products = [{
+    title: "mobile-phone",
+    price: "1200",
+    image: "./download.jpeg",
+    categories: "phone"
+}, 
+{
+    title: "mobile-phone2",
+    price: "2000",
+    image: "./phone.jpg",
+    categories: "car"
+},
+{
+    title: "mobile-phone3",
+    price: "2100",  
+    image: "./phone.jpg"
+},
+{
+    title: "mobile-phone4",
+    price: "2300",
+    image: "./phone.jpg"
+},
+{
+    title: "mobile-phone5",
+    price: "2500",
+    image: "./phone.jpg"
+},
+]
+let title;
+if (window.location.pathname == "/home.html") {
+
+    const searchParams = new URLSearchParams(window.location.search);
+    for (const [key, value] of searchParams.entries()) {
+        if (key === "title") {
+            title = value;
+        }
+        console.log(`${key}, ${value}`);
+    }
+    console.log(title)
+    
+    const currentProduct = products.find(urlTitle => urlTitle.title === title)
+    console.log(currentProduct)
+    let priceDiv = document.getElementById("priceDiv")
+    priceDiv.innerText = `$ ${currentProduct.price}`
+}
+
+const RenderProducts = () => {
+    let card_container = document.getElementById("card_container")
+    products.map((data, index) => {
+        console.log(data)
+        card_container.innerHTML += `
+        <div>
+            <img src=${data.image} height="200" width="200" />
+            <a href="/home.html?title=${data.title}">${data.title}</a>
+        </div>
+        `
+    })
+}
+if (window.location.pathname == "/") {
+
+    RenderProducts()
+}
