@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-2">
+    <h1>Expense Tracker</h1>
+    <div class="my-4">
+        <label for="">Name</label>
+        <input id="name" />
+    </div>
+    <div class="my-4">
+        <label for="">Expense</label>
+        <input id="expense" />
+    </div>
+    <div>
+        <button type="submit" id="submit_btn" >Submit</button>
+    </div>
+    <div class="border my-4 p-2">
+        <ul id="expenses"></ul>
+        <div id="not_found">No Expense Found</div>
+    </div>
+    <button id="signOut">Sign Out</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="app.js" type="module"></script>
+    <script src="database.js" type="module"></script>
+</body>
+
+</html>
