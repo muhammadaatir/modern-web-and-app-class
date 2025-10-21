@@ -1,4 +1,4 @@
-const supabaseClient = supabase.createClient("https://ophpxkbpdmhyaewdtyna.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9waHB4a2JwZG1oeWFld2R0eW5hIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc3ODU0NTcsImV4cCI6MjA3MzM2MTQ1N30.YSsSj7he-ajQPsReYUspRSd4huShG87oUyvnQhRQMFQ"
+const supabaseClient = supabase.createClient(
 );
 export const getData = async () => {
   const { data, error } = await supabaseClient
