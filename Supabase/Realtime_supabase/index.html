@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <a href="login.html">Login Page</a>
+    <div style="display: flex;">
+
+        <div id="userContainer" style="border: 1px solid blue; padding: 5px;width: 30%;">
+        </div>
+        <div id="container" style="border: 1px solid black; padding: 5px; width: 70%;">
+            Click a user to initiate chat
+
+        </div>
+    </div>
+    Message
+    <input type="text" id="message">
+    <button onclick="sendMessage()">Send</button>
+
+    <button onclick="signout()">Sign Out</button> -->
+    <label for="">doctor</label>
+    <select id="doctors" onchange="getDoctor(event)">
+        <option value="placeholder"></option>
+        <option value="2">Dr Ali</option>
+        <option value="1">Dr Ahmed</option>
+    </select>
+    <label for="">days</label>
+    <input type="date" name="" id="date">
+    <label for="">timings</label>
+    <select>
+        <option value="">9-9:30</option>
+        <option value="">10-11</option>
+        <option value="">11-12</option>
+    </select>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="database.js"></script>
+</body>
+
+</html>
